@@ -20,6 +20,7 @@ jobs:
       uses: cycjimmy/semantic-release-action@v3
       with:
         branch: 'master'
+        tag_format: custom-v${version}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - uses: hashicorp/setup-terraform@v2
